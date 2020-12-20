@@ -10,7 +10,7 @@
 </head>
 <body>
 
-
+<div class="container">
 <form method="POST">
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
@@ -27,11 +27,14 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
+
 
 <?php
-
+  
+  $users [] = $_POST;
   echo '<pre>';
-  var_dump($_POST);
+  var_dump($users);
 
 ?>
 
